@@ -1,0 +1,36 @@
+name: ADF Backup
+on:
+  schedule:
+    - cron: "0 2 * * *"  # diário às 02:00 UTC
+  workflow_dispatch: {}
+
+jobs:
+  backup:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      id-token: write
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+
+      - name: Install deps
+        run: |
+          python -m pip install --upgrade pip
+          pip install azure-identity azure-mgmt-datafactory GitPython
+
+      - name: Write settings
+        run: |
+          mkdir -p src/config
+          echo '${{ secrets.SETTINGS_JSON }}' > src/config/settings.json
+
+      - name: Run export
+        run: python src/adf_backup.py
+
+      - name: Commit & push
+        run: python src/devops_sync.py
