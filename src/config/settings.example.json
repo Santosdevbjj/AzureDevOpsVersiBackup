@@ -1,9 +1,14 @@
 {
   "subscription_id": "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
   "resource_group": "rg-data-platform-dev",
-  "data_factory_name": "adf-dev-meusufixo",
-  "workspace_name": "adf-dev-meusufixo",
+  "data_factory_name": "adf-dev-seusufixo",
+  "workspace_name": "adf-dev-seusufixo",
   "backup_root": "backups",
   "repo_path": ".",
-  "commit_message_prefix": "[ADF Backup]"
+  "commit_message_prefix": "[ADF Backup]",
+  "git_remote_name": "origin",
+  "log_level": "INFO",
+  "log_dir": "logs",
+  "max_log_size_bytes": 5242880,
+  "log_backup_count": 5
 }
