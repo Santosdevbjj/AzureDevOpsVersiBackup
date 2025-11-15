@@ -38,51 +38,52 @@ O repositório citado pelo curso que inspira este projeto é: Santosdevbjj/Azure
 
 Este projeto demonstra como configurar Azure DevOps com Git, criar e vincular um Azure Data Factory ao repositório, e manter um fluxo de backup automatizado com Python. 
 
-Com isso, você garante governança, histórico de mudanças e prepara a base para uma esteira de CI/CD no Azure. O conteúdo se alinha ao contexto “Bootcamp Microsoft AI for Tech - Azure Databricks” indicado no repositório original de referência.
+Com isso, você garante governança, histórico de mudanças e prepara a base para uma esteira de CI/CD no Azure. 
 
-> Observação: Para este projeto, consideramos uma conta gratuita de estudante no Azure, priorizando recursos com camadas gratuitas e custos mínimos.
 
----
-
-- README.md: Documentação principal do projeto, guia completo de uso.
-- LICENSE: Licença do repositório (ex.: MIT).
-- docs/: Evidências visuais com prints de configuração e diagramas do fluxo.
-- src/: Código-fonte dos scripts Python para backup e sincronização.
-- backups/: Exportações versionadas dos artefatos do Data Factory e snapshots.
-- .github/workflows/: Pipeline opcional do GitHub Actions para automatizar backups.
-- config/settings.example.json: Exemplo de configuração local.
+> **Observação:** Para este projeto, consideramos uma conta gratuita de estudante no Azure, priorizando recursos com camadas gratuitas e custos mínimos.
 
 ---
 
-
-
-Tecnologias utilizadas
-
-- Azure Data Factory: Orquestração de dados em pipelines visuais e artefatos versionáveis.
-- Azure DevOps + Git: Controle de versão, branches, PRs e integração direta com Data Factory.
-- Python 3.10+: Automação de export e commit dos artefatos.
-- Azure SDK for Python (azure-mgmt-datafactory, azure-identity): Acesso aos recursos do Data Factory via API.
-- GitPython: Interação programática com repositórios Git locais.
-- GitHub Actions (opcional): Automação de backups em cron.
-- JSON: Formato de exportação dos artefatos.
-- MIT License: Licenciamento aberto para uso e modificação.
+- **README.md:** Documentação principal do projeto, guia completo de uso.
+- **LICENSE:** Licença do repositório (ex.: MIT).
+- **docs/:** Evidências visuais com prints de configuração e diagramas do fluxo.
+- **src/:** Código-fonte dos scripts Python para backup e sincronização.
+- **backups/:** Exportações versionadas dos artefatos do Data Factory e snapshots.
+- **.github/workflows/:** Pipeline opcional do GitHub Actions para automatizar backups.
+- **config/settings.example.json:** Exemplo de configuração local.
 
 ---
 
-Requisitos de hardware e software
 
-- Hardware:
+
+**Tecnologias utilizadas**
+
+- **Azure Data Factory:** Orquestração de dados em pipelines visuais e artefatos versionáveis.
+- **Azure DevOps + Git:** Controle de versão, branches, PRs e integração direta com Data Factory.
+- **Python 3.10+:** Automação de export e commit dos artefatos.
+- **Azure SDK for Python (azure-mgmt-datafactory, azure-identity):** Acesso aos recursos do Data Factory via API.
+- **GitPython:** Interação programática com repositórios Git locais.
+- **GitHub Actions (opcional):** Automação de backups em cron.
+- **JSON:** Formato de exportação dos artefatos.
+- **MIT License:** Licenciamento aberto para uso e modificação.
+
+---
+
+**Requisitos de hardware e software**
+
+- **Hardware:**
   - CPU: Qualquer CPU moderna.
   - Memória: 4 GB RAM mínimo (8 GB recomendado).
   - Armazenamento: 2 GB livres para ambiente e backups.
-- Software:
+- **Software:**
   - Sistema operacional: Windows, macOS ou Linux.
   - Python: Versão 3.10+ instalada.
   - Git: Versão 2.30+ instalada e configurada.
   - Azure CLI: Para login e contexto (recomendado).
   - Conta Azure: Estudante gratuita com acesso a Data Factory e DevOps.
   - Acesso ao Azure DevOps: Organização e projeto criados.
-- Bibliotecas Python:
+- **Bibliotecas Python:**
   - azure-identity
   - azure-mgmt-datafactory
   - GitPython
