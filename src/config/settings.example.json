@@ -1,0 +1,9 @@
+{
+  "subscription_id": "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
+  "resource_group": "rg-data-platform-dev",
+  "data_factory_name": "adf-dev-meusufixo",
+  "workspace_name": "adf-dev-meusufixo",
+  "backup_root": "backups",
+  "repo_path": ".",
+  "commit_message_prefix": "[ADF Backup]"
+}
