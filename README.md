@@ -186,4 +186,9 @@ Com isso, você garante governança, histórico de mudanças e prepara a base pa
   - Se necessário, az account set --subscription "<ID OU NOME>"
 
     
+---
+**Autor:**
+Sergio Santos 
+
+---
 
