@@ -27,9 +27,6 @@ Este guia te leva do zero à integração completa entre Azure Data Factory e Az
 
 Também inclui um projeto Python pronto para automatizar exportações e commits no repositório. 
 
-O repositório citado pelo curso que inspira este projeto é: Santosdevbjj/AzureDevOpsVersiBackup.
-
-
 
 ---
 
