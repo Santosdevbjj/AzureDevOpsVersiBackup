@@ -43,6 +43,14 @@ Com isso, você garante governança, histórico de mudanças e prepara a base pa
 
 > **Observação:** Para este projeto, consideramos uma conta gratuita de estudante no Azure, priorizando recursos com camadas gratuitas e custos mínimos.
 
+
+---
+
+**Estrutura do repositório**
+
+<img width="875" height="1670" alt="repo-structure" src="https://github.com/user-attachments/assets/77a1ee64-1280-4968-897b-0b8faf742f1d" />
+
+
 ---
 
 - **README.md:** Documentação principal do projeto, guia completo de uso.
