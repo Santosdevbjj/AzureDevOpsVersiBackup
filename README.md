@@ -1,4 +1,4 @@
-### Github e Azure Devops para Versionamento e Backups
+### Github e Azure Devops para Versionamento e Backups 
 
 ![Azure_Databricks01](https://github.com/user-attachments/assets/6ba56dfe-a8ea-40db-8529-209cbfb1437d) 
 
