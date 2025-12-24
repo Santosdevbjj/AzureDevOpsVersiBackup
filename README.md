@@ -1,4 +1,4 @@
-### Azure Data Factory + Azure DevOps**
+# Azure Data Factory + Azure DevOps**
 
 **Versionamento, Governança e Backups Automatizados de Pipelines de Dados**
 
@@ -27,13 +27,13 @@ O repositório inclui tanto a configuração nativa de integração ADF + DevOps
 
 Em ambientes corporativos de dados, especialmente os regulados, é comum encontrar:
 
-Pipelines sem histórico claro de alterações
+• Pipelines sem histórico claro de alterações
 
-Dependência excessiva do publish manual do Data Factory
+• Dependência excessiva do publish manual do Data Factory
 
-Ausência de backups versionados de artefatos críticos
+• Ausência de backups versionados de artefatos críticos
 
-Dificuldade de auditoria e rollback em caso de falhas
+• Dificuldade de auditoria e rollback em caso de falhas
 
 
 Com base na minha experiência em sistemas críticos bancários, projetei esta solução para mitigar riscos de perda de metadados, garantir rastreabilidade completa e facilitar processos de rollback, mesmo em ambientes de alta conformidade regulatória.
@@ -47,15 +47,15 @@ O projeto demonstra como tratar pipelines de dados com o mesmo rigor aplicado a 
 
 Este projeto foi desenvolvido com os seguintes objetivos:
 
-Demonstrar governança de dados aplicada ao Azure Data Factory
+• Demonstrar governança de dados aplicada ao Azure Data Factory
 
-Implementar versionamento real de pipelines, datasets e linked services
+• Implementar versionamento real de pipelines, datasets e linked services
 
-Criar uma base sólida para futuras esteiras de CI/CD em dados
+• Criar uma base sólida para futuras esteiras de CI/CD em dados
 
-Automatizar backups de artefatos com Python
+• Automatizar backups de artefatos com Python
 
-Simular práticas comuns em ambientes bancários e corporativos
+• Simular práticas comuns em ambientes bancários e corporativos
 
 
 
@@ -96,30 +96,30 @@ Essas decisões refletem práticas adotadas em ambientes críticos, onde rastrea
 
 🚀 **Tecnologias Utilizadas**
 
-Azure Data Factory (V2): Orquestração de pipelines e artefatos
+• Azure Data Factory (V2): Orquestração de pipelines e artefatos
 
-Azure DevOps (Git): Controle de versão, branches e PRs
+• Azure DevOps (Git): Controle de versão, branches e PRs
 
-Python 3.10+: Automação de exportações e commits
+• Python 3.10+: Automação de exportações e commits
 
-Azure SDK for Python:
+• Azure SDK for Python:
 
-azure-identity
+• azure-identity
 
-azure-mgmt-datafactory
-
-
-GitPython: Integração programática com repositórios Git
-
-GitHub Actions (opcional): Automação de backups
-
-JSON: Formato dos artefatos versionados
-
-MIT License: Licenciamento aberto
+• azure-mgmt-datafactory
 
 
+• GitPython: Integração programática com repositórios Git
 
----
+• GitHub Actions (opcional): Automação de backups
+
+• JSON: Formato dos artefatos versionados
+
+• MIT License: Licenciamento aberto
+
+
+
+
 
 
 ---
@@ -132,46 +132,21 @@ MIT License: Licenciamento aberto
 ---
 
 
-
-📂 Estrutura do Repositório
-
-.
-├── README.md
-├── LICENSE
-├── docs/
-│   ├── imagens/
-│   └── diagramas/
-├── src/
-│   ├── export_adf_artifacts.py
-│   ├── git_commit_backup.py
-│   └── utils/
-│       └── auth.py
-├── backups/
-│   ├── pipelines/
-│   ├── datasets/
-│   ├── linkedServices/
-│   └── triggers/
-├── config/
-│   └── settings.example.json
-└── .github/
-    └── workflows/
-        └── backup-adf.yml
-
 **Descrição das Pastas**
 
-**docs/**
+• **docs/**
 Evidências visuais, prints de configuração e diagramas de arquitetura.
 
-**src/**
+• **src/**
 Scripts Python responsáveis por exportar artefatos do ADF e versioná-los no Git.
 
-**backups/**
+• **backups/**
 Armazena snapshots versionados dos pipelines, datasets, linked services e triggers.
 
-**config/**
+• **config/**
 Arquivo de configuração de exemplo para credenciais e parâmetros do projeto.
 
-**.github/workflows/**
+• **.github/workflows/**
 Pipeline opcional para automação de backups via GitHub Actions.
 
 
@@ -180,19 +155,19 @@ Pipeline opcional para automação de backups via GitHub Actions.
 
 ▶️ **Como Executar o Projeto**
 
-Pré-requisitos
+• Pré-requisitos
 
-Python 3.10 ou superior
+• Python 3.10 ou superior
 
-Git instalado e configurado
+• Git instalado e configurado
 
-Azure CLI (recomendado)
+• Azure CLI (recomendado)
 
-Conta Azure (estudante ou trial)
+• Conta Azure (estudante ou trial)
 
-Azure Data Factory criado
+• Azure Data Factory criado
 
-Organização e projeto no Azure DevOps
+• Organização e projeto no Azure DevOps
 
 
 **Execução Local**
@@ -224,13 +199,13 @@ python src/git_commit_backup.py
 
 🧠 **Aprendizados**
 
-Como o Azure Data Factory organiza internamente seus artefatos
+• Como o Azure Data Factory organiza internamente seus artefatos
 
-Diferença entre publish branch e versionamento colaborativo
+• Diferença entre publish branch e versionamento colaborativo
 
-Importância do Git como mecanismo de governança em dados
+• Importância do Git como mecanismo de governança em dados
 
-Aplicação de conceitos de engenharia de software em pipelines analíticos
+• Aplicação de conceitos de engenharia de software em pipelines analíticos
 
 
 
@@ -238,13 +213,13 @@ Aplicação de conceitos de engenharia de software em pipelines analíticos
 
 🔮 **Próximos Passos**
 
-Integração com Azure Key Vault para segredos
+• Integração com Azure Key Vault para segredos
 
-Validação automática dos JSONs do ADF em CI
+• Validação automática dos JSONs do ADF em CI
 
-Deploy entre ambientes (Dev → Test → Prod)
+• Deploy entre ambientes (Dev → Test → Prod)
 
-Monitoramento e alertas de falhas
+• Monitoramento e alertas de falhas
 
 
 
