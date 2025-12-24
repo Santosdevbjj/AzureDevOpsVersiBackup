@@ -1,4 +1,4 @@
-# Azure Data Factory + Azure DevOps**
+# Azure Data Factory + Azure DevOps
 
 **Versionamento, Governança e Backups Automatizados de Pipelines de Dados**
 
