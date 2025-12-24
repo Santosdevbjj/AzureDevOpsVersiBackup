@@ -63,7 +63,7 @@ Este projeto foi desenvolvido com os seguintes objetivos:
 
 🛠 **Decisões Técnicas**
 
-Integração Nativa ADF + Azure DevOps
+### Integração Nativa ADF + Azure DevOps
 
 Optei pela integração oficial do Data Factory com Azure DevOps Git para garantir:
 
@@ -74,7 +74,7 @@ Colaboração via branches e pull requests
 Histórico auditável de mudanças
 
 
-**Scripts Python para Backups**
+### Scripts Python para Backups
 
 Embora o ADF já escreva no repositório, implementei scripts em Python para:
 
@@ -85,7 +85,7 @@ Snapshots adicionais
 Automação de commits e versionamento independente do publish
 
 
-Uso de Git como Fonte de Verdade
+### Uso de Git como Fonte de Verdade
 
 Toda a configuração considera o repositório Git como fonte oficial de versionamento, reduzindo riscos operacionais.
 
@@ -116,8 +116,6 @@ Essas decisões refletem práticas adotadas em ambientes críticos, onde rastrea
 • JSON: Formato dos artefatos versionados
 
 • MIT License: Licenciamento aberto
-
-
 
 
 
@@ -155,7 +153,7 @@ Pipeline opcional para automação de backups via GitHub Actions.
 
 ▶️ **Como Executar o Projeto**
 
-• Pré-requisitos
+ **Pré-requisitos***
 
 • Python 3.10 ou superior
 
@@ -239,6 +237,7 @@ Mesmo em contexto educacional, a solução foi estruturada para refletir cenári
 ---
 **Autor:**
 Sergio Santos 
+
 
 ---
 
