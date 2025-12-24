@@ -104,18 +104,18 @@ Essas decisões refletem práticas adotadas em ambientes críticos, onde rastrea
 
 • Azure SDK for Python:
 
-• azure-identity
+  - azure-identity
 
-• azure-mgmt-datafactory
+  - azure-mgmt-datafactory
 
 
-• GitPython: Integração programática com repositórios Git
+  - GitPython: Integração programática com repositórios Git
 
-• GitHub Actions (opcional): Automação de backups
+  - GitHub Actions (opcional): Automação de backups
 
-• JSON: Formato dos artefatos versionados
+  - JSON: Formato dos artefatos versionados
 
-• MIT License: Licenciamento aberto
+  -  MIT License: Licenciamento aberto
 
 
 
@@ -153,7 +153,7 @@ Pipeline opcional para automação de backups via GitHub Actions.
 
 ▶️ **Como Executar o Projeto**
 
- **Pré-requisitos***
+ **Pré-requisitos**
 
 • Python 3.10 ou superior
 
